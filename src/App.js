@@ -28,6 +28,7 @@ function App() {
       setVerdict(['', 'lightcoral']);
     } else {
       setBmi(localBmi);
+      // eslint-disable-next-line default-case
       switch (true) {
         case localBmi < 18.5:
           setVerdict(['Per mažas svoris', 'rgb(174, 217, 210)']);
