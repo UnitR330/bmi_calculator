@@ -19,11 +19,6 @@ function App() {
     const enteredWeight = parseFloat(event.target[1].value);
     const enteredHeight = parseFloat(event.target[0].value);
  
- 
- 
- 
- 
-
     setWeight(enteredWeight);
     let localBmi = ((enteredWeight / enteredHeight ** 2) * 10000).toFixed(1);
 
@@ -62,7 +57,7 @@ function App() {
     value = value > 251 ? '251' : value;  
 
     if (value >= 251) {
-      alert('Maximum human height living at present time is 251 cm. His name Sultan Kösen. Is it you?');
+      alert('Maximum height of human living at present time is 251 cm. His name Sultan Kösen. Is it you?');
     }
     
     setHeight(value);
